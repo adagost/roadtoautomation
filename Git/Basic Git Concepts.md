@@ -93,7 +93,13 @@ Now that we have a new branch created, this is what our repo will look like:
 
 ![folder structure](Images/g664.jpg)
 
-We created the new branch from the state of our last commit.
+We created the new branch from the state of our last commit. Let's add more stuff and merge the new state to the `main` branch. First, we have to stage and commit this branch.
+
+After committing your test branch, switch back to the main branch by running this command: `git checkout main.`
+
+This time around we did not add `-b` because we are not creating a new branch.
+
+Now we can merge the changes we made in the test branch into the main branch by running `git merge test`
 
 ####Sources: 
 - https://www.freecodecamp.org/news/git-and-github-for-beginners/
