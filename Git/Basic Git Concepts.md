@@ -107,7 +107,7 @@ Here is a visual representation of our repo:
 
 If you go on to push your repo to GitHub, you'll see that the test branch will not be pushed. It will only remain in your local repo. If you would like to push your test branch, switch to the branch using `git checkout test` and then run `git push -u origin test`.
 
-##Pulling a repo in Git
+## Pulling a repo in Git
 
 To pull in Git means to clone a remote repository's current state into your computer/repository. This comes in handy when you want to work on your repo from a different computer or when you are contributing to an open source project online.
 
