@@ -97,7 +97,29 @@ We created the new branch from the state of our last commit. Let's add more stuf
 
 After committing your test branch, switch back to the main branch by running this command: `git checkout main.`
 
-This time around we did not add `-b` because we are not creating a new branch
+This time around we did not add `-b` because we are not creating a new branch.
+
+Now we can merge the changes we made in the test branch into the main branch by running `git merge test`. At this point, you will see all the changes made in the test branch reflected on the main branch.
+
+Here is a visual representation of our repo:
+
+![folder structure](Images/g816.jpg)
+
+If you go on to push your repo to GitHub, you'll see that the test branch will not be pushed. It will only remain in your local repo. If you would like to push your test branch, switch to the branch using `git checkout test` and then run `git push -u origin test`.
+
+##Pulling a repo in Git
+
+To pull in Git means to clone a remote repository's current state into your computer/repository. This comes in handy when you want to work on your repo from a different computer or when you are contributing to an open source project online.
+
+To test this, don't worry about switching to a new computer. Just run `cd ..` to leave the current directory and go back one step.
+
+Go to GitHub, and on your repository's main page you should see a green button that says "Code". When you click on the button, you should see some options in a dropdown menu. Go on and copy the HTTPS URL.
+
+After that, run git clone YOUR_HTTPS_URL. This command pulls the remote repository into your local computer
+
+
+
+
 
 ####Sources: 
 - https://www.freecodecamp.org/news/git-and-github-for-beginners/
