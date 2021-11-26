@@ -28,10 +28,8 @@ In summary, GitHub lets you store your repo on their platform. Another awesome f
 
 - **Step 1:** Create a GitHub account
 - **Step 2:** Create a Repository  
-
-You can click on the + symbol on the top right corner of the page then choose "New repository". Give your repo a name then scroll down and click on "Create repository".  
-
 - **Step 3:** Add and Commit Files
+- **Step 4:** Push the repository to GitHub
 
 ## File states
 
@@ -49,3 +47,24 @@ When we first initialized our project, the file was not being tracked by Git. To
 
 Now our file is in the staged state. You will not get a response after this command, but to know what state your file is in, you can run the `git status command`.
 ## How to commit files in git
+
+The next state for a file after the staged state is the committed state. To commit our file, we use the `git commit -m "first commit"` command.
+
+The first part of the command git commit tells Git that all the files staged are ready to be committed so it is time to take a snapshot. The second part `-m "first commit" `is the commit message. `-m` is shorthand for message while the text inside the parenthesis is the commit message.
+
+## Push the repo to GitHub
+
+After you create the repo, you should be redirected to a page that tells you how to create a repo locally or push an existing one.
+
+In our case, since we're practicing, the project already exists locally so we will use commands in the "…or push an existing repository from the command line" section. These are the commands:
+`git remote add origin https://github.com/adagost/roadtoautomation` 
+
+`git branch -M main`
+  
+`git push -u origin main`
+
+The first command creates a connection between your local repo and the remote repo on GitHub.
+
+The second command changes your main branch's name to "main". The default branch might be created as "master", but "main" is the standard name for this repo now.
+
+The last command pushes your repo from your local device to GitHub.
