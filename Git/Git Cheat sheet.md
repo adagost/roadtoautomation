@@ -178,4 +178,6 @@ You can transfer completed work from one branch to another using git rebase.
 
 #### Sources: 
 - https://www.freecodecamp.org/news/git-cheat-sheet/
+- https://gitcheatsheet.org/search
+- https://gitcheatsheet.org/how-to
 
